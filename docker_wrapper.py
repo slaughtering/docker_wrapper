@@ -12,15 +12,15 @@ import sys
 converts = [
     {
         'prefix': 'gcr.io',
-        'replace': lambda x: x.replace('gcr.io', 'gcr.azk8s.cn'),
+        'replace': lambda x: x.replace('gcr.io', 'gcr.mirrors.ustc.edu.cn'),
     },
     {
         'prefix': 'k8s.gcr.io',
-        'replace': lambda x: x.replace('k8s.gcr.io', 'gcr.azk8s.cn/google-containers'),
+        'replace': lambda x: x.replace('k8s.gcr.io', 'gcr.mirrors.ustc.edu.cn/google-containers'),
     },
     {
         'prefix': 'quay.io',
-        'replace': lambda x: x.replace('quay.io', 'quay.azk8s.cn'),
+        'replace': lambda x: x.replace('quay.io', 'quay.mirrors.ustc.edu.cn'),
     }
 ]
 
